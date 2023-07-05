@@ -33,19 +33,30 @@ npm or Yarn
 # Installation
 
 1. Clone the repository to your local machine using the following command:
-``` git clone https://github.com/barakatimothy/E-Commerce-website.git ```
+``` 
+    git clone https://github.com/barakatimothy/E-Commerce-website.git 
+
+```
 
 2. Navigate to the project directory:
 
- cd E-Commerce-website
+ ```
+   cd E-Commerce-website
+ 
+ ```
 
 3. Install the dependencies:
-   ``` npm install ```
+``` 
+   npm install 
+   
+```
 
 # Usage
 Start the local development server:
 
-```npm start
+```
+npm start
+
 ```
 
 # Contributing
