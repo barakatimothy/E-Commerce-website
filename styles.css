@@ -1,3 +1,6 @@
+html{
+    scroll-behavior: smooth;
+}
 body{
  font-family: 'Lato', sans-serif;
  padding: 0;
@@ -45,10 +48,12 @@ nav{
 }
 .slider{
     background: url(https://images.unsplash.com/photo-1618123069754-cd64c230a169?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=387&q=80);
+    overflow: hidden;
 }
 .sliderWrapper{
     display: flex;
     width: 500vw;
+    transition: all 1s ease-in-out;
 }
 .sliderItem{
     width: 100vw;
@@ -67,7 +72,7 @@ nav{
     position:absolute;
     top:10%;
     right:10%;
-    font-size:70px;
+    font-size:40px;
     font-weight: 900;
     text-align: center;
     color:white;
@@ -91,7 +96,7 @@ nav{
     position:absolute;
     top:50%;
     right:10%;
-    font-size:70px;
+    font-size:30px;
     font-weight: 900;
     color:white;  
     border:1px solid gray;
@@ -103,6 +108,182 @@ nav{
     background-color: white;
     color:black
 }
-.sliderItem:nth-child(2).sliderBg{
-    background-color: yellow;
+.sliderPrice{
+    background-color: green;
+}
+.features{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px;
+}
+.feature{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.featureIcon{
+    width: 50px;
+    height: 50px;   
+}
+.featureTitle{
+    font-size: 20px;
+    font-weight: 600;
+    margin: 20px;
+}
+.featureDesc{
+    color:grey; 
+}
+.product{
+    height: 100vh;
+    background-color: grey;
+    position: relative;
+}
+.payment{
+    width: 500px;
+    height: 500px;
+    background-color: white;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left:0;
+    right: 0;
+    margin: auto;  
+    padding: 10px 50px;
+    display: none;
+    flex-direction: column;
+    box-shadow: -52px -66px 138px -85px rgba(0,0,0,0.42) inset;
+-webkit-box-shadow: -52px -66px 138px -85px rgba(0,0,0,0.42) inset;
+-moz-box-shadow: -52px -66px 138px -85px rgba(0,0,0,0.42) inset;
+z-index: 2;
+}
+.payTitle{
+    font-size: 20px;
+    color:lightgray;
+
+}
+label{
+    font-size: 14px;
+    font-weight: 300;
+}
+.payInput{
+    padding: 10px;
+    margin: 10px 0px;
+    border: none;
+    border-bottom: 1px solid grey;
+} 
+.payInput ::placeholder{
+    color:lightgrey
+}
+.cardIcons{
+    display: flex;
+}
+.cardIcon{
+    margin-right: 10px;
+
+}
+.cardInfo{
+    display: flex;
+    justify-content: space-between;
+}
+.sm{
+    width: 30%;
+}
+.payButton{
+    position: absolute;
+    height: 40px;
+    bottom: -40px;
+    width: 100%;
+    left:0 ;
+    box-shadow: -52px -66px 138px -85px rgba(0,0,0,0.42) inset;
+-webkit-box-shadow: -52px -66px 138px -85px rgba(0,0,0,0.42) inset;
+-moz-box-shadow: -52px -66px 138px -85px rgba(0,0,0,0.42) inset;
+z-index: 2;
+  background-color:green;
+  color:white;
+  border: none; 
+  cursor: pointer; 
+}
+.close{
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    background-color: black;
+    color:white;
+    top: 10px;
+     right: 10px;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     cursor: pointer;
+     padding: 2px;
+}
+.prodctImg{
+    width: 50%;
+}
+.productDetails{
+    position: absolute;
+    top:10%;
+    right: 0;
+    width: 40%; 
+    padding: 50px; 
+}
+.productTitle{
+    font-size: 75px;
+     font-weight: 900;
+}
+.productDesc{
+    font-size: 24px;
+    color: whitesmoke;
+}
+.colors,.sizes{
+ display: flex;
+ margin-bottom: 30px;
+}
+.color1{
+    width: 32px;
+    height: 32px;
+    border-radius: 5px;
+    background-color: black;
+    margin-right: 10px;
+}
+.color2{
+    width: 32px;
+    height: 32px;
+    border-radius: 5px;
+    background-color:darkblue;
+    margin-right: 10px;
+}
+.size{
+    padding: 5px 20px;
+    border:1px solid black;
+    margin-right: 10px;
+    cursor: pointer;
+    font-size: 20px;
+}
+.productButton{
+    padding: 10px 20px;
+    background-color:black;
+    color:white;
+    font-weight: 600;
+    cursor:pointer;
+}
+.productButton:hover{
+    background-color: white;
+    color:black;
+}
+.gallery{
+    padding: 50px;
+    display: flex;
+}
+.galleryItem {
+    flex: 1;
+}
+.galleryImg{
+    width: 100%;
+    height: 100%;
+}
+.galleryTitle{
+    color: whitesmoke;
 }
