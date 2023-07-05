@@ -287,3 +287,53 @@ z-index: 2;
 .galleryTitle{
     color: whitesmoke;
 }
+footer{
+display: flex;
+color: white;
+}
+.footerLeft{
+    flex: 2;
+    justify-content: space-between;
+    display: flex;
+    padding: 50px;
+   
+}
+.footerRight{
+    flex:1;
+    margin: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.fInput{
+    padding: 5px;
+}
+.fButton{
+    padding: 5px;
+    background-color: black;
+    color: white;
+}
+.fIcons{
+    display: flex;
+}
+.fIcon{
+    width: 20px;
+    height: 20px;
+    margin: 10px;
+}
+.copyRoght{
+    font-weight: 300;
+    font-size: 14px;
+}
+.fMenuTitle{
+    font-size: 16px;
+}
+.fList{
+    padding: 0; 
+    list-style: none;
+}
+.firstItem{
+    margin-bottom: 10px;
+    color: grey;
+    cursor: pointer;
+} 
