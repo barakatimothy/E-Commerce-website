@@ -1,0 +1,108 @@
+body{
+ font-family: 'Lato', sans-serif;
+ padding: 0;
+ margin: 0;
+}
+nav{
+    background-color: black;
+    color: white;
+    padding: 20px 50px;
+}
+.navTop{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.search{
+    display: flex;
+    align-items: center;
+    background-color: grey;
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+.searchInput::placeholder{
+    color:lightgray;
+}
+.searchInput{
+    border:none;
+    background-color: transparent;
+}
+.limitedOffer{
+    font-size: 20px;
+    border-bottom: 2px solid green;
+    cursor:pointer;
+}
+.navBottom{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.menuItem{
+    margin-right: 50px;
+    cursor:pointer;
+    color:lightgrey;
+    font-weight: 400px;
+}
+.slider{
+    background: url(https://images.unsplash.com/photo-1618123069754-cd64c230a169?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=387&q=80);
+}
+.sliderWrapper{
+    display: flex;
+    width: 500vw;
+}
+.sliderItem{
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position:relative;
+}
+.sliderBg{
+    width: 750px;
+    height: 750px;
+    border-radius: 50%;
+    position:absolute;
+}
+.sliderTitle{
+    position:absolute;
+    top:10%;
+    right:10%;
+    font-size:70px;
+    font-weight: 900;
+    text-align: center;
+    color:white;
+    z-index: 1;  
+}
+.sliderPrice{
+    position:absolute;
+    top:10%;
+    left:10%;
+    font-size:70px;
+    font-weight: 300;
+    text-align: center;
+    color:white;  
+    border:1px solid gray;
+    z-index: 1;
+}
+.sliderImg{
+    z-index: 1;
+}
+.buyButton{
+    position:absolute;
+    top:50%;
+    right:10%;
+    font-size:70px;
+    font-weight: 900;
+    color:white;  
+    border:1px solid gray;
+    cursor: pointer;
+    background-color: black;
+    z-index: 1;
+}
+.buyButton:hover{
+    background-color: white;
+    color:black
+}
+.sliderItem:nth-child(2).sliderBg{
+    background-color: yellow;
+}
