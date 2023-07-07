@@ -20,11 +20,11 @@ function showPayment() {
   payment.style.display = 'block';
 }
 
-// Close the payment section
 function closePayment() {
-  product.style.display = 'block';
-  payment.style.display = 'none';
-}
+    var paymentDiv = document.querySelector('.payment');
+    paymentDiv.style.display = 'none';
+  }
+  
 
 
 currentProductColors.forEach((color,index)=>{
