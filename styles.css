@@ -146,6 +146,9 @@
   .featureDesc {
     font-size: 14px;
     color: #777;
+    display: flex;
+    align-items: center;
+    
   }
   .product {
     display: flex;
