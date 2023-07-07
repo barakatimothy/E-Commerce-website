@@ -64,6 +64,7 @@
     position: relative;
     flex: 0 0 20%;
     margin-right: 10px;
+    cursor: pointer;
   }
   
   .sliderImg {

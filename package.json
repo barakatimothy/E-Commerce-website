@@ -1,0 +1,11 @@
+{
+  "name": "project",
+  "version": "1.0.0",
+  "description": "SoleMotion is an online shoe e-commerce website that allows customers to browse and purchase a wide range of stylish shoes from various brands. This README file provides an overview of the project and includes instructions on setting up and running the website locally.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
