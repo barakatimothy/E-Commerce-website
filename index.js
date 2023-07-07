@@ -1,51 +1,47 @@
+// Get the necessary elements
+const buyButtons = document.querySelectorAll('.buyButton');
+const productButton = document.querySelector('.productButton');
+const paymentButton = document.querySelector('.payButton');
+const closeButton = document.querySelector('.close');
+const product = document.querySelector('.product');
+const payment = document.querySelector('.payment');
 
-let choosenProduct = products[0]
-const currentProductImg = document.querySelector('.productImg')
-const currentProductTitle = document.querySelector('.productTitle')
-const currentProductPrice= document.querySelectorAll('.color')
-const currentProductSizes = document.querySelectorAl('.size')
-const wrapper = document.querySelector(".sliderWrapper")
-const menuItems = document.querySelectorAll('.menuItem')
+// Add event listeners
+buyButtons.forEach(button => {
+  button.addEventListener('click', showPayment);
+});
 
+productButton.addEventListener('click', showPayment);
+closeButton.addEventListener('click', closePayment);
 
-menuItems.forEach((item,index)=>{
-    item.addEventListener('click',()=>{
-          //change current slide
-        wrapper.style.transform =`translateX(${-100 *index}vw)`
-          //cahnge choosen product
-        choosenProduct = products[index]
-         //
-        currentProductTitle.textContent = choosenProduct.title
-        currentProductPrice.textContent  = choosenProduct.price
-       
-        currentProductImg.src =choosenProduct.colors[0].img
-        //asign new color
-        currentProduct.forEach((color,index)=>{
-            color.style.backgroudColor  = choosenProduct.colors[index].code
-        })
-    })
-})
+// Show the payment section
+function showPayment() {
+  product.style.display = 'none';
+  payment.style.display = 'block';
+}
+
+// Close the payment section
+function closePayment() {
+  product.style.display = 'block';
+  payment.style.display = 'none';
+}
+
 
 currentProductColors.forEach((color,index)=>{
     color.addEventListener('click',()=>{
         currentProductImg.src =choosenProduct.colors[index].img
     })
 })
-
-currentProductSizes.forEach((size,index) =>{
-    size.addEventListener('click',()=>{
-        currentProductSizes.forEach((size) =>{
-            size.style.backgroudColor = "white";
-            size.style.color = "black"
-        })
-        size.style.backgroudColor = "white";
-        size.style.color = "black"
-    })
-})
-const productButton = document.querySelector('.productButton')
-const payment = document.querySelector('.payment')
-const close= document.querySelector('.close')
-
+currentProductSizes.forEach((size, index) => {
+    size.addEventListener('click', () => {
+        currentProductSizes.forEach((size) => {
+            size.style.backgroundColor = "white";
+            size.style.color = "black";
+        });
+        size.style.backgroundColor = "white";
+        size.style.color = "black";
+    });
+});
 productButton.addEventListener('click',()=> {
     payment.style.display = 'flex'
 })
