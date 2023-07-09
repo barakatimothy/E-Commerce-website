@@ -72,3 +72,5 @@ Submit a pull request describing your changes.
 # License.
 
 This project is licensed under the MIT License.
+
+copyright@Sole motion 2023
