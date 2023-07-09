@@ -114,4 +114,4 @@ fetch('http://localhost:3000/api/data', {
   })
   .catch(error => {
     console.error('Error:', error);
-  });
+});
